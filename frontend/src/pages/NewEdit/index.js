@@ -51,17 +51,25 @@ export default function NewEdit() {
 
     async function handleSubmit(data) {
         if (!id) {
-            await api.post('/eventos', data);
+            try {
+                await api.post('/eventos', data);
 
-            toast.success('Meetup criado com sucesso!');
+                toast.success('Meetup criado com sucesso!');
 
-            history.push('/');
+                history.push('/');
+            } catch (err) {
+                toast.error(err.response.data.error.message);
+            }
         } else {
-            await api.put(`/eventos/${id}`, data);
+            try {
+                await api.put(`/eventos/${id}`, data);
 
-            toast.success('Meetup atualizado com sucesso!');
+                toast.success('Meetup atualizado com sucesso!');
 
-            history.push('/');
+                history.push('/');
+            } catch (err) {
+                toast.error(err.response.data.error.message);
+            }
         }
     }
 
