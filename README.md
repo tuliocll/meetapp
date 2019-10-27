@@ -5,9 +5,9 @@
 
 ##### App agregador de eventos para desenvolvedores chamado Meetapp (um acrônimo à Meetup + App).
 
-<img src="https://github.com/tuliocll/meetapp/blob/master/img/mobile-preview.gif" alt="Mobile Preview" width="320px"></img>
+<img src="https://github.com/tuliocll/meetapp/blob/master/imgs/mobile-preview.gif" alt="Mobile Preview" width="320px"></img>
 
-<img src="https://github.com/tuliocll/meetapp/blob/master/img/web-preview.gif" alt="Web Preview" width="320px"></img>
+<img src="https://github.com/tuliocll/meetapp/blob/master/imgs/web-preview.gif" alt="Web Preview" width="320px"></img>
 
 ## Criando os containers:
 
