@@ -51,6 +51,12 @@ Faça uma copia do .env-example e edite com suas configurações:
 cp .env-example .env
 ```
 
+Instale o adonis CLI:
+
+```bash
+npm i -g @adonisjs/cli
+```
+
 **Gerar secret key do adonis:**
 
 ```bash
@@ -66,7 +72,7 @@ adonis migration:run
 **(Opcional) Executar seeds:**
 
 ```bash
-adonis db:seed:all
+adonis seed
 ```
 
 **Executar Backend (DEV)**
