@@ -14,13 +14,13 @@
 **Container do postgres:**
 
 ```bash
-$ docker run --name database_meetapp -e POSTGRES_PASSWORD = docker -e POSTGRES_DB = database_meetapp -p 5432: 5432 -d postgres
+$ docker run --name postgres -e "POSTGRES_PASSWORD=meetapp" -e "POSTGRES_DB=meetapp" -p 5432:5432 -d postgres
 ```
 
 **Container do Redis:**
 
 ```bash
-docker run --name redismeetapp -p 6379: 6379 -d -t redis: alpino
+docker run --name redis -p 6379:6379 -d -t redis:alpine
 ```
 
 ## Instalar - Backend
